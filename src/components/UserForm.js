@@ -175,7 +175,7 @@ export default function UserFrom() {
             yearError={state.error.includes("year")}
           />
           <CustomInput
-            label={"Email number*"}
+            label={"Email*"}
             error={state.error.includes("email")}
             errorMessage={
               state.email === ""
