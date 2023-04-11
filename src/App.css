@@ -1,3 +1,19 @@
+:root {
+  --toastify-color-success: #000;
+  --toastify-color-error: #000;
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  --toastify-text-color-light: #000;
+}
+
+.tost-success {
+  background: #cdfadd !important;
+  /* color: rgb(89, 26, 26) !important;
+  font-weight: bold; */
+}
+.tost-error {
+  background: #ffc1bc !important;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +51,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 400px;
+}
+/* A container context based on inline size */
+.form-box {
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin: 4px 0px;
+  border-radius: 8px;
+}
+.card {
+  justify-content: center;
+  padding: 30px 0px 40px 0px;
+}
+.date-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /* padding: 20px 0px; */
+}
+.select-box {
+  width: 122px;
+}
+.date-select-box {
+  position: relative;
+}
+.date-select-box > .error {
+  bottom: -30px;
+}
+.form-name {
+  font-weight: 500;
+  color: #000;
+}
+.input-box {
+  padding: 10px 0px;
+  position: relative;
+}
+.input-label {
+  padding-bottom: 8px !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.input-box input {
+  width: 400px;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.btn-box button {
+}
+.Button {
+  margin-right: 20px !important;
+}
+.error {
+  position: absolute;
+
+  bottom: -20px;
+  color: #c62216;
+  font-size: small;
+}
+/* Apply styles if the container is narrower than 650px */
+@container (width < 650px) {
 }
